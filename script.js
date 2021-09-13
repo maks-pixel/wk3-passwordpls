@@ -13,29 +13,47 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+
+
+
+var lowerChar = "abcdefghijklmnopqrstuvwxyz";
+var upperChar = "ABCDEFGHIJKLMNOPQRSTUZWXYZ";
+var specialChar = "!#$%&'()*+-./:;<=>?@[\^_`{|}~";
+var numb = "0123456789";
+var passChar = "";
 //pick number of characters you want the password to be
 var charNumb = window.prompt('Choose the amount of characters you want your password to be. Must be between 8-128 characters');
-if (charNumb < 8 || charNumb > 128) {
+if (charNumb > 8 && charNumb < 128 ) {
 
+  //pick if you want lowercase yes or no
+  var lowerChoice = confirm("Do you want lowercase letters in your password?");
+  if (lowerChoice) {
+    passChar += lowerChar;
+  }
+
+  //pick if you want uppercase yes or no
+  var upperChoice = confirm("wanna get wild and add uppercase letters in your password?");
+  if (upperChoice) {
+    passChar += upperChar;
+  }
+
+  //pick if you want special character yes or no
+  var specialChoice = confirm("what about some special characters in your password?");
+  if (specialChoice) {
+    passChar += specialChar;
+  }
+
+
+  //pick if you want number yes or no
+  var numbChoice = confirm("Is numbers in your password ok?");
+  if (numbChoice) {
+    passChar += numb;
+  }
+
+} else {
+ //not right entry for character number
   window.alert("Invalid entry. You must enter a number between 8-128 for the amount of characters you want in your password")
-
 };
 
-//pick if you want lowercase yes or no
-
-
-//pick if you want upper case yes or no
-
-
-//pick if you want numbers yes or no
-
-
-//pick if you want special characters
-
-
-//if you didnt pick one you get angry message big no no
-
-
-//password gets generated based on input
 
 
