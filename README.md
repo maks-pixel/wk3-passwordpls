@@ -6,7 +6,7 @@ It has prompts that allow you to select the amount of characters in your passwor
 
 ## Github link
 The repository link to the project
-
+ https://maks-pixel.github.io/wk3-passwordpls/
 
 
 ## File links
