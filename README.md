@@ -12,6 +12,6 @@ The repository link to the project
 ## File links
 to open [index.html](index.html) file to view the code
 
-to open the screenshot here is the link [screenshot.png](images/screenshot.png)
+to open the screenshot here is the link [screenshot.png](assets/images/screenshot.png)
 
-![Screenshot](images/screenshot.png)
+![Screenshot](assets/images/screenshot.png)
