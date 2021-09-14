@@ -45,7 +45,7 @@ generateBtn.addEventListener("click", writePassword);
       } else {
        //not right entry for character number
        window.alert("Invalid entry. You must enter a number between 8-128 for the amount of characters you want in your password")
-      
+       return undefined;
       };
     
       for ( i = 0; i < charNumb; i++){
