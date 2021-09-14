@@ -52,7 +52,8 @@ generateBtn.addEventListener("click", writePassword);
          password +=
          passChar[Math.floor(Math.random() * passChar.length)];
       }
-      return password;
+       return password;
+       
     }
    
     passwordText.value = password;
